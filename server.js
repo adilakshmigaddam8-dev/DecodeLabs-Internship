@@ -7,6 +7,7 @@ const cors = require('cors');
 const path     = require('path');
 const { insertContact } = require('./database');
 const { normalize } = require('path/posix');
+const contacts = require('./contacts.json');
 
 const app  = express();
 const PORT = process.env.PORT || 3000;
@@ -23,11 +24,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ── API: Get all contacts ─────────────────────
-app.get('/api/contacts', (req, res) => {
-  const contacts = require('./contacts.json');
-  res.json(contacts);
-});
+const fs = require('fs');
 
+app.get('/api/contacts', (req, res) => {
+    const contacts = JSON.parse(
+        fs.readFileSync('./contacts.json', 'utf8')
+    );
+    res.json(contacts);
+});
 // ── API: Contact form ─────────────────────────
 app.post('/api/contact', (req, res) => {
   const { name, email, subject, message } = req.body;

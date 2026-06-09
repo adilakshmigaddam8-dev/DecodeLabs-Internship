@@ -1,28 +1,43 @@
-# DecodeLabs Internship
-
-## Project Title
-Portfolio Website
+# Personal Portfolio Website
 
 ## Description
-This is my personal portfolio website created using HTML, CSS, and JavaScript. The website showcases my skills, projects, certifications, education, and contact information. It is designed to provide a professional online presence and demonstrate my web development skills.
+A modern and responsive portfolio website built using HTML, CSS, JavaScript, Node.js, and MySQL. The website showcases my skills, projects, certifications, education, and contact information.
 
 ## Features
 - Responsive Design
-- About Me Section
-- Skills Showcase
-- Projects Section
-- Certifications Section
-- Contact Information
+- Dark/Light Mode
+- Skills Section
+- Projects Showcase
+- Education Timeline
+- Certifications
+- Contact Form
+- Resume Download
 
 ## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
-- Git
-- GitHub
+- Node.js
+- Express.js
+- MySQL
 
 ## How to Run
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone <repository-url>
+
+2. Install dependencies:
+   npm install
+
+3. Start the server:
+   node server.js
+
+4. Open:
+   http://localhost:3000
+
+## Author
+Adilakshmi
+B.Tech Information Technology
+
+## Internship
+This project was developed as part of the DecodeLabs Internship Program.

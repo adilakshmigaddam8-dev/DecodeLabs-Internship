@@ -188,7 +188,7 @@ To obtain a challenging position in the field of Software Development where I ca
 
 📧 Email: adilakshmigaddam8@gmail.com
 
-💼 LinkedIn: gaddam AdiLakshmi
+💼 LinkedIn: https://www.linkedin.com/in/adi-lakshmi-gaddam-2a31372b5/
 
 💻 GitHub:https://github.com/adilakshmigaddam8-dev 
 

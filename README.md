@@ -62,21 +62,19 @@ The website features a modern user interface, responsive design, smooth navigati
 ## 📂 Project Structure
 
 ```text
-Portfolio-Website/
+backend/
 │
 ├── public/
 │   ├── index.html
 │   ├── style.css
 │   ├── main.js
+│   ├── resume.pdf
+│   └── certificates/
 │
 ├── server.js
 ├── database.js
 ├── package.json
-├── README.md
-│
-└── assets/
-    ├── images/
-    └── resume/
+└── portfolio.db
 ```
 
 ---

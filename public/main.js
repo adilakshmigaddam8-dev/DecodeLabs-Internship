@@ -223,16 +223,21 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-        const res = await fetch('https://decodelabs-internship-1-3bxz.onrender.com/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name:    document.getElementById('name').value.trim(),
-            email:   document.getElementById('email').value.trim(),
-            subject: document.getElementById('subject').value.trim(),
-            message: document.getElementById('message').value.trim(),
-          })
+        const formData = {
+          name:    document.getElementById('name').value.trim(),
+          email:   document.getElementById('email').value.trim(),
+          subject: document.getElementById('subject').value.trim(),
+          message: document.getElementById('message').value.trim(),
+        };
+
+        const res = await fetch("https://decodelabs-internship-1-3bxz.onrender.com/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
         });
+
         const data = await res.json();
         if (data.success) {
           showToast(data.message || "Message sent successfully! I'll get back to you soon.");

@@ -22,6 +22,12 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// ── API: Get all contacts ─────────────────────
+app.get('/api/contacts', (req, res) => {
+  const contacts = require('./contacts.json');
+  res.json(contacts);
+});
+
 // ── API: Contact form ─────────────────────────
 app.post('/api/contact', (req, res) => {
   const { name, email, subject, message } = req.body;

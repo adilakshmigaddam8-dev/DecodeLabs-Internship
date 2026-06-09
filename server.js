@@ -3,6 +3,7 @@
    ============================================ */
 
 const express  = require('express');
+const cors = require('cors');
 const path     = require('path');
 const { insertContact } = require('./database');
 const { normalize } = require('path/posix');
@@ -11,6 +12,7 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 // ── Middleware ────────────────────────────────
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

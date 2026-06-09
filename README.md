@@ -11,6 +11,12 @@ This Portfolio Website is designed to showcase my technical skills, projects, ce
 The website features a modern user interface, responsive design, smooth navigation, and interactive elements to enhance user experience.
 
 ---
+## 🌐 Live Portfolio
+
+🔗 Live Website: https://decode-labs-internship-azure.vercel.app
+
+Visit my portfolio to explore my projects, skills, certifications, and professional journey.
+
 
 ## 🚀 Features
 
@@ -180,11 +186,11 @@ To obtain a challenging position in the field of Software Development where I ca
 
 ## 📬 Contact
 
-📧 Email: your-email@gmail.com
+📧 Email: adilakshmigaddam8@gmail.com
 
-💼 LinkedIn: your-linkedin-profile
+💼 LinkedIn: gaddam AdiLakshmi
 
-💻 GitHub: your-github-profile
+💻 GitHub:https://github.com/adilakshmigaddam8-dev 
 
 📍 India
 
